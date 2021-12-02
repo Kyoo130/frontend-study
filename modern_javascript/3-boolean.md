@@ -96,3 +96,28 @@ if (Infinity)
 if (-Infinity)
 ```
 출처: https://developer.mozilla.org/ko/docs/Glossary/Truthy
+
+---
+<br>
+
+### 5. 거짓같은 값 (Falsey)
+<br>
+
+**거짓 같은 값이란?**
+* Boolean을 기대하는 문맥에서 `false` 로 평가되는 값을 말한다.
+
+<br>
+
+예제1)
+
+```javascript
+if (false)
+if (null)
+if (undefined)
+if (0)
+if (-0)
+if (0n)
+if (NaN)
+if ("")
+```
+출처: https://developer.mozilla.org/ko/docs/Glossary/Falsy
