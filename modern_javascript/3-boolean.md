@@ -67,3 +67,32 @@ console.log(0 == []) // result: true
 console.log('' == []) // result: true
 ```
 
+---
+<br>
+
+### 4. 참 같은 값 (Truthy)
+<br>
+
+**참 같은 값이란?**
+* Boolean을 기대하는 문맥에서 `true` 로 평가되는 값을 말한다.
+
+<br>
+
+예제1)
+
+```javascript
+if (true)
+if ({})
+if ([])
+if (42)
+if ("0")
+if ("false")
+if (new Date())
+if (-42)
+if (12n)
+if (3.14)
+if (-3.14)
+if (Infinity)
+if (-Infinity)
+```
+출처: https://developer.mozilla.org/ko/docs/Glossary/Truthy
