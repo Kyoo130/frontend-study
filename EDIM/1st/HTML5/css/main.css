@@ -1,0 +1,159 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("fonts.css");
+@import url("fontello.css");
+@import url("normalize.css");
+@import url("reset.css");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 숨김 콘텐츠 */
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    overflow: hidden;
+}
+
+/* 공통 스타일 */
+.gradient-effect {
+    background: #aaa;
+}
+
+a {
+    color: inherit; /* body가 가진 컬러를 상속 받도록 설정 */
+    text-decoration: none;
+}
+
+/* 본문 스타일 */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+    background: #aaa;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+/* 공통 레이아웃 */
+.header, .visual, .main, .slogan, .footer {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header {
+    background: #fff;
+    padding: 0 30px;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+}
+
+/* 로고 */
+.logo {
+    background: blue;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+}
+
+/* 멤버 링크 */
+.member-service {
+    /* background-color: pink; */
+    font-size: 0; /* 공백 없애는 방법 */
+    text-align: right;
+    padding: 4px 0;
+    transform: translateX(10px);
+    text-transform: uppercase;
+}
+
+.member-service li {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.member-service a {
+    display: inline-block;
+    padding: 6px 10px;
+}
+
+/* 메인 메뉴 */
+.navigation {
+    padding-bottom: 45px;
+}
+
+.menu {
+    background: coral;
+    padding-left: 225px;
+    display: flow-root;
+}
+
+.menu-item {
+    float: left;
+    position: relative;
+    border-left: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.menu-button {
+    padding: 12px 21px 13px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+}
+
+
+/* 비주얼 */
+.visual {
+    background: purple;
+}
+
+/* 메인 콘텐츠 */
+.main {
+    background: #fff;
+    display: flow-root; /* Edge 미지원 */
+    min-height: 400px;
+    padding: 30px 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+.group {
+    float: left;
+    margin: 0 15px;
+}
+
+.group1 {
+    background: tan;
+    width: 250px;
+}
+
+.group2 {
+    background: green;
+    width: 380px;
+}
+
+.group3 {
+    background: purple;
+    width: 190px;
+}
+
+/* 슬로건 */
+.slogan {
+    background: lime;
+    clear: both;
+}
+
+.footer {
+    background: aqua;
+}
